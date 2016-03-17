@@ -4,6 +4,10 @@
 * ES6
 * Hot-module reload
 
+## Setup
+
+$> npm install
+
 ## Running
 
 $> npm run start
