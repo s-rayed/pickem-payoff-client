@@ -1,0 +1,143 @@
+/*@import "compass/css3";*/
+
+body {
+
+}
+
+/* ---------------------------------------- HEADER ------------------------------------------ */
+
+.header {
+  background: #3a3a3a;
+}
+
+.header-navigation {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  border-radius: 1em;
+}
+
+.header-navigation a:hover {
+  background-color: #c76605;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.5s ease;
+}
+
+.mainBody {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: bold;
+  text-align: center;
+  height: 1000px;
+  color: #a0a0a0;
+  text-align: center;
+  background: #4e4e4e;
+}
+
+/* ----------------------------------------------------------------- Sign In Form --------------------------------------------------------------------- */
+
+.signInContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.signInTitle {
+  font-family: 'Open Sans' , sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 1em;
+}
+
+.signInForm input[type="text"], .signInForm input[type="password"] {
+  width: 20%;
+  margin: 0;
+  padding: 5px 10px;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #FFFFFF;
+  outline: 0;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  outline: 0;
+}
+
+.signInError {
+  background: #c0392b;
+  padding: 0.2em;
+  width: 20%;
+  margin: auto;
+  color: #f1c40f;
+}
+
+.signInButton {
+  width: 10%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.signInButton:hover {
+  transition: background-color 0.5s ease;
+}
+
+/* ----------------------------------------------------------------- Sign In Form --------------------------------------------------------------------- */
+
+
+.footer {
+  background: lightgreen;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .mainBody    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .mainBody    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
